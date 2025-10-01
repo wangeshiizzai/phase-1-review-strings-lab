@@ -1,16 +1,25 @@
-const currentUser = `Wangeci`;
 
-const welcomeMessage = `Welcome to Flatbook, `;
+// index.js
 
-const welcomeMessage = currentUser;
+// 1️⃣ Define the current user
+let currentUser = "Wangeci";
 
-const welcomeMessage = `welcome to Flatbook, currentUser`;
+// 2️⃣ welcomeMessage
+// Format: "Welcome to Flatbook, <username>!"
+let welcomeMessage = "Welcome to Flatbook, " + currentUser + "!";
 
-const welcomeMessage = `Welcome to Flatbook, ` + currentUser;
+// 3️⃣ excitedWelcomeMessage
+// Format: "WELCOME TO FLATBOOK, <USERNAME>!"
+let excitedWelcomeMessage = "WELCOME TO FLATBOOK, " + currentUser.toUpperCase() + "!";
 
-const welcomeMessage = `Welcome to Flatbook, ${currentUser}!`;
+// 4️⃣ shortGreeting
+// Format: "Welcome, <first initial>!"
+let shortGreeting = "Welcome, " + currentUser[0] + "!";
 
-const excitedWelcomeMessage = welcomeMessage.toUpperCase();
 
-const shortGreeting = `Welcome, ${currentUser.slice(0, 1)}`;
-
+module.exports = {
+  currentUser,
+  welcomeMessage,
+  excitedWelcomeMessage,
+  shortGreeting
+};
